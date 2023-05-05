@@ -1,0 +1,25 @@
+.over {
+    background-image: url("/img/pexels-juan-salamanca-61143.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 500px;
+    margin: 200px auto;
+
+}
+
+.over h1,
+.over h2 {
+    text-align: center;
+    color: #ecdddd;
+    
+}
+.over h1{
+    padding-top:300px;
+}
+.over a{
+    background-color: rgb(108, 46, 167);
+}
+.over a:hover{
+cursor: pointer;
+opacity: .5;
+}

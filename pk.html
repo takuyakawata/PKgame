@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/pk.css">
+
+  <title>PKgameMain</title>
+</head>
+<body>
+  <h1 class="top2">カジノPKワールドカップ2023</h1>
+
+<!-- P Kゲーム！！ウイイレのPKをイメージして作ってみる
+  ①方向を決める　キッカーとキーパー
+  ②それが同じなら　シュートストップ　違うければゴールイン
+  ③スコアボードに記録が自動されていく　５回対決
+  ④結果を表示しておく
+  ⑤記録が残っていく
+  ⑥記録に応じて、レベルアップしていく
+  ⑦選手育成ができる
+  -->
+<div class="t">
+  <div class="soccer_player">
+
+    <div id="player_t"><img class="player_img" src="/img/sports_soccer_man_asia.png" alt="サッカー選手"></div>
+
+    <div class="btn">
+      <button id="player_btn_ta">ランダムシュート</button>
+      <button id="player_btn_tb">チェンジ</button>
+    </div>
+ </div>
+
+<!-- ボールが動くようにする -->
+  <div class="ball">
+    <img class="soccer_ball_img" src="/img/soccer_ball-1.jpg" alt="サッカーボール">
+  </div>
+
+<!-- 枠の設定をする　分割しておいてボールが飛んでいく　キーパーが移動する -->
+
+   <div class="goal">
+        <div ><img class="gozira" id="gozira_gk_t" src="/img/ゴジラ.png" alt="gozira"></div>
+
+        <div id="goalzone">
+          ゴール
+        <p value="1t"></p>
+        <p value="2t"></p>
+        <p value="3t"></p>
+        <p value="4t"></p>
+        <p value="5t"></p>
+        <p value="6t"></p>
+        <p value="7t"></p>
+        <p value="8t"></p>
+        <p value="0t"></p>
+        </div>
+    </div>
+<!-- ゴールの中のエリアにジャンプすることができるようにする -->
+</div>
+  <!-- tの終わりタグ -->
+
+<!-- 後攻めの選手インド系 -->
+<div class="k">
+  <div class="soccer_player">
+    <div id="player_k"><img class="player_img2" src="/img/sports_soccer_man_india.png" alt="サッカー選手"></div>
+
+    <div class="btn">
+      <button id="player_btn_ka">ランダムシュート</button>
+      <button id="player_btn_kb">チェンジ</button>
+    </div>
+  </div>
+
+  <!-- ボールが動くようにする -->
+  <div class="ball">
+    <img class="soccer_ball_img" src="/img/soccer_ball-1.jpg" alt="サッカーボール">
+  </div>
+  <!-- 枠の設定をする　分割しておいてボールが飛んでいく　キーパーが移動する -->
+  <div class="goal">
+    <div ><img class="gozira" id="gozira_gk_k" src="/img/ゴジラ.png" alt="gozira"></div>
+
+    <div id="goalzone_k">
+      ゴール
+      <p value="1k"></p>
+      <p value="2k"></p>
+      <p value="4k"></p>
+      <p value="4k"></p>
+      <p value="5k"></p>
+      <p value="6k"></p>
+      <p value="7k"></p>
+      <p value="8k"></p>
+      <p value="0k"></p>
+    </div>
+  </div>
+  <!-- ゴールの中のエリアにジャンプすることができるようにする -->
+</div>
+  <!-- kの終わりタグ -->
+
+<!-- スコア -->
+<div>
+  <div id="result_t">t選手のシュートは？</div>
+  <div id="score_t">現在のスコア</div>
+
+  <div id="result_k">k選手のシュートは？</div>
+  <div id="score_k">現在のスコア</div>
+
+</div>
+
+<div class="c">
+    <button id="btn_c">結果発表</button>
+    <h1 id="last_result">。。。</h1>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="/JS/pk.js">
+
+</script>
+
+</body>
+</html>
