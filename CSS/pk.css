@@ -71,12 +71,22 @@ button{
     height: 60px;
     border-radius: 50%;
 }
-
+/* 番号の面の設定 */
 p{
     padding: 10px;
     border: black solid 2px;
-    width:100px;
+    width:50px;
     height: 50px;
+    margin-left:5px;
+    color: white;
+}
+/* 奇数 */
+.red{
+    background-color: red;
+}
+/* 偶数 */
+.black{
+    background-color: rgb(52, 31, 31);
 }
 
 /* ゴールゴジラ番号 */
@@ -85,19 +95,21 @@ p{
     background-color: rgb(238, 226, 226);
     margin:0 0 0 auto ;
     align-items: center;
+    border:solid 9px ;
 }
 
 #goalzone,
 #goalzone_k{
     border: whitesmoke solid 5px;
-    width:150px;
+    width:250px;
     margin-left: auto;
-    background-color: rgb(129, 68, 68);
+    background-color: rgb(27, 101, 5);
+    display: flex;
 }
 .gozira{
     width: 80px;
 }
-
+#result,
 #result_t,
 #score_t{
      background-color: #000;
