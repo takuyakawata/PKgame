@@ -1,3 +1,27 @@
+/* トップ画面の設定 */
+/* .main_visual{
+position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url(/img/pexels-pressmaster-3192198-3840x2160-25fps.mp4) no-repeat center center/cover;
+}
+video{
+    min-width: 100%;
+        min-height: 100vh;
+        z-index: 1;
+}
+.overlay{
+width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .7) 50%);
+    background-size: 4px 4px;
+    z-index: 2;
+} */
+
 
 /* ======================= */
 body{
@@ -6,22 +30,6 @@ body{
 .top2{
     text-align: center;
 }
-
-#modoru{
-    background-color: blue;
-    color: rgb(225, 220, 220);
-    padding: 1%;
-    border-radius: 50%;
-    position:fixed;
-    top:5%;
-    left:3%;
-    cursor:crosshair;
-}
-#modoru:hover {
-    opacity: .5;
-}
-
-
 .t ,.k{
     display: flex;
     border: solid;
@@ -47,30 +55,10 @@ body{
     display:flex;
     flex-flow: column;
 }
-
-#player_btn_ka,
-#player_btn_ta,
-#submit_k,
-#submit_t{
+button{
     width: 100px;
     height: 50px;
-    border-radius: 20%;
-    background-color: rgb(2, 17, 17);
-    color:aliceblue;
-    cursor: cell;
-    border-bottom: 5px solid #6e2929;
-}
-
-.btn_off{
-    opacity: .2;
-}
-
-#player_btn_ka:hover,
-#player_btn_ta:hover,
-#submit_k:hover,
-#submit_t:hover{
-    opacity: .5;
-    border-bottom: 2px solid #6e2929;
+    border-radius: 40%;
 }
 
 /* ボール */
@@ -83,22 +71,12 @@ body{
     height: 60px;
     border-radius: 50%;
 }
-/* 番号の面の設定 */
+
 p{
     padding: 10px;
     border: black solid 2px;
-    width:50px;
+    width:100px;
     height: 50px;
-    margin-left:5px;
-    color: white;
-}
-/* 奇数 */
-.red{
-    background-color: red;
-}
-/* 偶数 */
-.black{
-    background-color: rgb(52, 31, 31);
 }
 
 /* ゴールゴジラ番号 */
@@ -107,91 +85,38 @@ p{
     background-color: rgb(238, 226, 226);
     margin:0 0 0 auto ;
     align-items: center;
-    border:solid 9px ;
 }
 
 #goalzone,
 #goalzone_k{
     border: whitesmoke solid 5px;
-    width:90%;
+    width:150px;
     margin-left: auto;
-    background-color: rgb(27, 101, 5);
-    display: flex;
+    background-color: rgb(129, 68, 68);
 }
-
 .gozira{
     width: 80px;
-    position: relative;
-        /* 要素を相対位置に設定 */
-        animation-name: goziraMove;
-        /* アニメーション名を指定 */
-        animation-duration: 1s;
-        /* アニメーションの時間を指定 */
-        animation-timing-function: ease-in-out;
-        /* アニメーションの動きを指定 */
-        animation-iteration-count: infinite;
-        /* アニメーションの繰り返し回数を指定 */
-    }
-    
-    @keyframes goziraMove {
-        0% {
-            top: 0;
-        }
-    
-        /* アニメーション開始時の位置を指定 */
-        50% {
-            top: 100px;
-        }
-    
-        /* アニメーション途中の位置を指定 */
-        100% {
-            top: 0;
-        }
-    
-        /* アニメーション終了時の位置を指定 */
-    }
-
-.score{
-    width: 48%;
-    position: absolute;
-    z-index: 10;
-    align-items:center;
-    background-color: brown;
-    top: 20%;
-    left:10%;
-}    
-.shuuto_score{
-    display: flex;
-    width:100%;
-}
-.shuuto_score div,
-.shuuto_score h2{
-    margin:3% 1% ;
-    width: 97%;
 }
 
-#result,
-.score .t_money,
-#score_t,
 #result_t,
-.score .k_money,
-#result_k,
-#score_k{
-   background-color: #000;
-   color: aliceblue;
-   font-size: 30px;
-   text-align: center;
-}
+#score_t{
+     background-color: #000;
+     color: aliceblue;
+        font-size: 30px;
+        text-align: center;
+    }
 
-#result{
-    margin:1% 1% 0 1% ;
-    width:cover;
-    padding: 3%;
-    font-size: 300%;
-}
 
 .c{
+text-align: center;
+padding-top: 50px;
+}
+#result_k,
+#score_k{
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
     text-align: center;
-    padding-top: 50px;
+
 }
 
