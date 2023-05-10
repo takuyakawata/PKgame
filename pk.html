@@ -9,7 +9,38 @@
   <title>PKgameMain</title>
 </head>
 <body>
-<h1 class="top2">GsカジノPK</h1>
+
+<div class="top-top">
+  <h1 class="top2">GsカジノPK </h1>
+  <button id="modoru" onclick="location.href='/pk_top.html'" >戻る</button>
+</div>
+
+<!-- スコア -->
+<div  class="score">
+      <div>
+        <div id="result">？？？</div>
+      </div>
+     <div  class="shuuto_score">
+          <div>
+            <div id="result_t">t選手現在の<br>シュートスコア</div>
+            <div id="score_t"> ０ ゴール/ ０回中</div>
+            <div class="score_midasi"></div>
+            <h2 class="t_money"></h2>
+          </div>
+          <div>
+            <div id="result_k">k選手現在の<br>シュートスコア</div>
+            <div id="score_k"> ０ ゴール/ ０回中</div>
+            <div class="score_midasi"></div>
+            <h2 class="k_money"></h2>
+          </div>
+        </div>
+    <div class="c">
+      <h1 id="last_result1">結果発表</h1>
+      <h1 id="last_result2">。。。</h1>
+    </div>
+  
+  </div>
+
 
 <!-- P Kゲーム！！ウイイレのPKをイメージして作ってみる
   ①方向を決める　キッカーとキーパー
@@ -24,31 +55,21 @@
    <div class="soccer_player">
       <div>
         <div>現在の資金</div>
-        <div id="t_money"></div>
+        <h2 class="t_money"></h2>
       </div>
 
       <div id="player_t">
 
-        <select name="kajino" id="kajino_t">
-          <option value="">  </option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="red">red</option>
-          <option value="black">black</option>
-          <option value="1_12">1-12</option>
-          <option value="13_24">13-24</option>
-          <option value="25_26">25-36</option>
-          <option value="9">#</option>
-          <option value="9">#</option>
-          <option value="9">#</option>
-          <option value="9">#</option>
+        <select name="" id="kajino_t">
+          
+          <option value="37">red</option>
+          <option value="38">black</option>
+          <option value="39">1-12</option>
+          <option value="40">13-24</option>
+          <option value="41">25-36</option>
+          <option value="42">1-18</option>
+          <option value="43">19-36</option>
+        
         </select>
 
         <button id="submit_t" type="submit">決まり！！</button>
@@ -125,32 +146,28 @@
 <!-- 後攻めの選手インド系 -->
 <div class="k">
   <div class="soccer_player">
-    
-    
+
     <div>
         <div>現在の資金</div>
-        <div id="k_money"></div>
+        <h2 class="k_money"></h2>
     </div>
-     <di id="player_k">
-        <select name="kajino" id="">
-          <option value=""> </option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
+     <div id="player_k">
+        <select name="kajino" id="kajino_k">
+          <option value="37">red</option>
+          <option value="38">black</option>
+          <option value="39">1-12</option>
+          <option value="40">13-24</option>
+          <option value="41">25-36</option>
+          <option value="42">1-18</option>
+          <option value="43">19-36</option>
         </select>
         <button id="submit_k" type="submit">決まり！！</button>
 
         <img class="player_img2" src="/img/sports_soccer_man_india.png" alt="サッカー選手">
       
-      </di
+      </div>
 
-   </div>
+  
 
    <div class="btn">
       <button id="player_btn_ka">シュート</button>
@@ -160,9 +177,7 @@
   </div>
 
   <!-- ボールが動くようにする -->
-  <div class="ball">
-    <img class="soccer_ball_img" src="/img/soccer_ball-1.jpg" alt="サッカーボール">
-  </div>
+
   <!-- 枠の設定をする　分割しておいてボールが飛んでいく　キーパーが移動する -->
   <div class="goal">
     <div ><img class="gozira" id="gozira_gk_t" src="/img/ゴジラ.png" alt="gozira"></div>
@@ -214,32 +229,6 @@
       <!-- とりあえず////////////////////////////////////////////// -->
 
   </div>
-</div>
-  <!-- ゴールの中のエリアにジャンプすることができるようにする -->
-</div>
-  <!--______________________________________ kの終わりタグ -->
-
-
-
-<!-- スコア -->
-<div>
-  <div id="result">？？？</div>
-
-  
-  <div id="result_t">t選手のシュートは？</div>
-  <div id="score_t">現在のスコア</div>
-
-  <div id="result_k">k選手のシュートは？</div>
-  <div id="score_k">現在のスコア</div>
-
-</div>
-
-
-
-<div class="c">
-    <h1 id="last_result1">結果発表</h1>
-    <h1 id="last_result2">。。。</h1>
-</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="/JS/pk.js">
